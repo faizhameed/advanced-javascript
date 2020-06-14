@@ -11,3 +11,17 @@ const person = {
     console.log("hi " + this.name);
   },
 };
+
+//explicit binding
+
+const person3 = {
+  name: "karen",
+  age: "49",
+  hi: function () {
+    console.log("hi " + this.setTimeout);
+  }.bind(window),
+};
+
+person.hi();
+
+//arrow functions
